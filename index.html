@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Surprise 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<audio autoplay loop>
+  <source src="music/main.mp3" type="audio/mpeg">
+</audio>
+<body>
+
+<audio id="bgm" src="music/main.mp3" loop></audio>
+
+<!-- 🔐 PASSWORD SCREEN -->
+<div id="lock" class="screen active">
+  <h1>🎀 Enter the secret 🎀</h1>
+  <input id="pass" placeholder="Our date">
+  <br>
+  <button onclick="unlock()">Unlock 🎁</button>
+</div>
+
+<!-- 🎉 BIRTHDAY TEXT -->
+<div id="wish" class="screen">
+  <h1 class="bigText">🎉 HAPPY BIRTHDAY CUTIE 💖</h1>
+  <button onclick="showCake()">Continue 🎂</button>
+</div>
+
+<!-- 🎂 CAKE SCREEN -->
+<div id="cakeScreen" class="screen">
+  <h1>Make a wish 🎂</h1>
+
+  <div class="cake" onclick="blowCandle()">
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+    <div class="cake-body"></div>
+  </div>
+
+  <p>Tap the candle 🕯️</p>
+</div>
+
+<!-- 🎁 GIFT SCREEN -->
+<div id="gift" class="screen">
+  <h1>Just for you 💝</h1>
+
+  <div class="gift-box" onclick="openGift()">🎁</div>
+
+  <div id="menu" style="display:none;">
+    <a href="photos.html">📷 Memories</a>
+    <a href="letter.html">💌 Letter</a>
+    <a href="chocolate.html">🍫 Chocolate</a>
+    <a href="love.html">❤️ Love</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
